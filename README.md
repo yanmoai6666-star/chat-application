@@ -85,7 +85,6 @@ A real-time chat application built with Node.js, Express, and Socket.io, featuri
 chat-application/
 ├── src/
 │   ├── config/
-│   │   └── legacy-log-config.js   # Legacy log config (TO BE REMOVED)
 │   ├── frontend/
 │   │   ├── html/
 │   │   │   └── index.html         # Main HTML file
@@ -133,7 +132,7 @@ chat-application/
 
 ## Logging System
 
-The application uses **Winston** for centralized logging. The legacy log configuration file (`legacy-log-config.js`) is **deprecated** and will be removed in future versions.
+The application uses **Winston** for centralized logging. The legacy log configuration file) is **deprecated** and will be removed in future versions.
 
 ### Log Files
 - `logs/combined.log` - All log levels
@@ -144,7 +143,6 @@ The application uses **Winston** for centralized logging. The legacy log configu
 ### Logging System Migration
 We are currently transitioning from the old logging system to Winston. During this transition:
 
-1. The `legacy-log-config.js` file is still present for backward compatibility
 2. All new code should use the Winston logger from `utils/logger.js`
 3. The legacy configuration will be removed in a future update
 
